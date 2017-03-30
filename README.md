@@ -9,7 +9,7 @@ types of report types (boolean, blocklist-count,count-tags,list-tags) which are
 explained in more depth in the documentation.  The command line tool accepts file input,
 single ip input, and stdin if neither are provided.
 
-##Examples
+## Examples
 
 The likely the most common use of this tool would be to read from an input file
 of IP addresses (where each IP is on its own line) and output to the terminal or an ouput file the
@@ -59,7 +59,7 @@ cat output.csv
 79.137.72.43,0/17
 167.114.80.146,1/17
 ```
-##Other Useful Examples
+## Other Useful Examples
 ```
 printf "127.0.0.2" | maldnsbl --boolean --csv
 Querying DNSBLs  [####################################]  100%
@@ -92,7 +92,7 @@ cat output.txt
 ```
 
 
-##Todo
+## Todo
 * Implement Threading for large jobs
 * Add support for other types of IOCs
 * Add logic in the yaml file for keeping track of different types of IOC DNSBL
