@@ -15,16 +15,16 @@ The likely the most common use of this tool would be to read from an input file
 of IP addresses (where each IP is on its own line) and output to the terminal or an ouput file the
 results in csv format.
 ```
-    maldnsbl -f ips.txt --count-blocklists --fraction --iterate
-    Querying DNSBLs  [####################################]  100%             
-    79.157.17.112: 2/17
-    37.213.27.48: 0/17
-    198.50.177.221: 1/17
-    179.125.189.124: 0/17
-    63.243.252.196: 0/17
-    79.137.72.43: 0/17
-    167.114.80.146: 1/17 
-    ```
+maldnsbl -f ips.txt --count-blocklists --fraction --iterate
+Querying DNSBLs  [####################################]  100%             
+79.157.17.112: 2/17
+37.213.27.48: 0/17
+198.50.177.221: 1/17
+179.125.189.124: 0/17
+63.243.252.196: 0/17
+79.137.72.43: 0/17
+167.114.80.146: 1/17 
+```
 
 If you want to get the same report in csv format and you don't want to echo to the screen
 you could save the output to a file instead.
