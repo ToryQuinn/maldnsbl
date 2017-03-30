@@ -1,0 +1,59 @@
+Blocklists:
+  bl.blocklist.de:
+  - {127.0.0.2: amavis}
+  - apacheddos
+  - asterisk
+  - badbot
+  - ftp
+  - imap
+  - ircbot
+  - mail
+  - pop3
+  - regbot
+  - rfi-attack
+  - sasl
+  - ssh
+  - w00tw00t
+  - portflood
+  - sql-injection
+  - webmin
+  - trigger-spam
+  - manuall
+  - bruteforcelogin
+  - mysql
+  ipbl.zeustracker.abuse.ch:
+  - zeus
+  wormbl.imp.ch:
+  - worm
+  spamrbl.imp.ch:
+  - worm
+  dnsrbl.swinog.ch:
+  - {127.0.0.3: swinog}
+  crawler.rbl.webiron.net:
+  - crawler
+  all.rbl.webiron.net:
+  - {1: STABL}
+  - CABL
+  - BABL
+  truncate.gbudb.net:
+  - {127.0.0.2: malspam}
+  dnsbl-1.uceprotect.net:
+  - {127.0.0.2: malspam}
+  http.dnsbl.sorbs.net:
+  - open_http_proxy
+  socks.dnsbl.sorbs.net:
+  - open_socks_proxy
+  smtp.dnsbl.sorbs.net:
+  - open_smtp_relay
+  web.dnsbl.sorbs.net:
+  - XBL
+  zombie.dnsbl.sorbs.net:
+  - zombie
+  xbl.spamhaus.org:
+  - XBL
+  pbl.spamhaus.org:
+  - PBL
+  virbl.dnsbl.bit.nl:
+  - malspam
+nameservers:
+- 8.8.8.8
