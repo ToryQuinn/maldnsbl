@@ -12,11 +12,11 @@ def progressbar(func):
     """
     def wrapper(self,iocs):
         if self.quiet:
-            func(self,iocs)
+            return func(self,iocs)
         else:
             progress_total = len(self.blocklists) * len(iocs)
-            with click.progressbar(length=progress_total,label='Querying DNSBLs',fill_char='\033[92m#\033[0m',empty_char='\033[31m-\033[0m',bar_template='\033[1m%(label)s  [%(bar)s]  %(info)s\033[0m') as self.bar:
-                func(self,iocs)
+            with click.progressbar(length=progress_total,label='Querying DNSBLs',fill_char='\033[92m#\033[0m',empty_char='\033[31m-\033[0m',bar_template='\033[1m%(label)s  [%(bar)s\033[1m]  %(info)s\033[0m') as self.bar:
+                return func(self,iocs)
     return wrapper
 
 
@@ -259,7 +259,7 @@ class maldnsbl(object):
                 if results:
                     tags.append(results)
 
-            self.report[ioc] = Counter(x for xs in tags for x in set(xs))
+            self.report[ioc] = dict(Counter(x for xs in tags for x in set(xs)))
 
         return self.report
 
