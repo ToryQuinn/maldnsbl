@@ -11,6 +11,10 @@ single ip input, and stdin if neither are provided.
 
 ## Installation
 
+```
+$ pip install git+git://github.com/troykkt/maldnsbl.git
+```
+
 ## Usage
 
 ```
